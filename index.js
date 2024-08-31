@@ -2,10 +2,11 @@ import express from "express";
 import cors from "cors";
 import connectToMongo from "./config/db.js";
 import userRoutes from './routes/user.js';
+import dotenv from 'dotenv';
 
 const app = express();
-const PORT = process.env.PORT || 8000;
-
+const PORT = process.env.PORT || 8080;
+dotenv.config({ path: './.env' })
 // Connect to MongoDB
 connectToMongo();
 

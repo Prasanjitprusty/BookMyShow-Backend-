@@ -3,7 +3,7 @@ import mongoose from "mongoose"; /* mongoose helps to interact with MongoDB data
 const connectToMongo = async () => {
   /* asynchronous function to create database URL String */
   try {
-    await mongoose.connect("mongodb://localhost:27017/Book-Show");
+    await mongoose.connect(process.env.MONGO_URI);
     console.log("Connected to MongoDB successfully");
   } catch (error) {
     console.log(error);
