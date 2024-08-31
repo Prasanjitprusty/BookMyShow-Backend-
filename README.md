@@ -9,4 +9,4 @@
 ->index.js             
   
   UserName :- prasanjitprusty
-  password :- prusty@123
+  password :- prusty
